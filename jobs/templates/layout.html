@@ -1,4 +1,4 @@
-<!-- templates/layout.html -->
+{% from '_macros.html' import show_job, show_jobs with context %}
 <!doctype html>
 <html>
   <head>
@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bulma.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+
   </head>
   <body>
     <div class="container top">
@@ -19,7 +20,7 @@
 
 <!-- templates/_marcos.html -->
 <!-- show_job -->
-<div class="card adjust-height">
+<!-- <div class="card adjust-height">
   <header class="card-header">
     <p class="card-header-title">
     </p>
@@ -28,10 +29,10 @@
     <div class="content">
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- templates/index.html -->
-{% block content2 %}
+<!-- {% block content2 %}
   <div class="columns">
     <div class="column">
       <h1>Jobs</h1>
@@ -39,10 +40,10 @@
     <div class="column is-one-fifth">
     </div>
   </div>
-{% endblock %}
+{% endblock %} -->
 
 <!-- templates/employer.html -->
-{% block content3 %}
+<!-- {% block content3 %}
   <h2>Jobs</h2>
 
   <h2>Reviews</h2>
@@ -67,9 +68,9 @@
       <a class="button is-info is-pulled-right">Create Review</a>
     </div>
   </div>
-{% endblock %}
+{% endblock %} -->
 
-<!-- templates/review.html -->
+<!-- templates/review.html
 {% block content4 %}
   <h1>New Review</h1>
   <form method="post">
@@ -119,4 +120,4 @@
       </div>
     </div>
   </form>
-{% endblock %}
+{% endblock %} -->
